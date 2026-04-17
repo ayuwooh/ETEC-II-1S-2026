@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-25 10:45:35 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNS1NMTI7MjAyNi0wMy0yNTsiMTA6NDI6MDggIjsxOTMw"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNS1NMTI7MjAyNi0wMy0yNTsiMTA6NDU6MzUgIjsyOzIwNDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vsal, vreaj" type="Real" array="False" size=""/>
+            <input variable="vsal"/>
+            <if expression="vsal &lt; 2000.00">
+                <then>
+                    <assign variable="vreaj" expression="vsal*(15/100)"/>
+                </then>
+                <else>
+                    <if expression="vsal &gt;= 2000.00 &amp;&amp; vsal &lt;= 5000.00">
+                        <then>
+                            <assign variable="vreaj" expression="vsal*(5/100)"/>
+                        </then>
+                        <else>
+                            <assign variable="vreaj" expression="vsal*(5/100)"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="vsal" expression="vsal+vreaj"/>
+            <output expression="&quot;O sal&#225;rio reajustado &#233;: &quot; &amp;vsal" newline="True"/>
+            <output expression="&quot;E o valor de reajuste &#233;: &quot; &amp;vreaj" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

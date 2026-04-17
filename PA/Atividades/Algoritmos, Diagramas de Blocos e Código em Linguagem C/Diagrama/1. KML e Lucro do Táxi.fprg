@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-11 10:16:51 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6MDQ6NDAgIjsxOTI0"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6MTY6NTEgIjsxOzIwMzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vlt, vltgasto, vkminicial, vkmfinal, vdinheirop, vkml, vlucro" type="Real" array="False" size=""/>
+            <input variable="vlt"/>
+            <input variable="vltgasto"/>
+            <input variable="vkminicial"/>
+            <input variable="vkmfinal"/>
+            <input variable="vdinheirop"/>
+            <assign variable="vkml" expression="(vkmfinal-vkminicial)/vltgasto"/>
+            <assign variable="vlucro" expression="vdinheirop-(vlt*vltgasto)"/>
+            <output expression="&quot;KM por litro:&quot; &amp;vkml" newline="True"/>
+            <output expression="&quot;Lucro:&quot; &amp;vlucro" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

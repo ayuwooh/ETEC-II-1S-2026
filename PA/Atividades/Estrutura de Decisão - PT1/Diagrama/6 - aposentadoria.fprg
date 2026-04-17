@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="6 - aposentadoria"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-30 12:41:06 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzEyOjQwOjExIFBNOzI2NDY="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzEyOjQxOjA2IFBNOzE7Mjc1OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vage, vcont" type="Integer" array="False" size=""/>
+            <input variable="vage"/>
+            <input variable="vcont"/>
+            <if expression="vage &gt;= 65 or vcont &gt;= 30 or (vage &gt;= 60 and vcont &gt;= 25)">
+                <then>
+                    <output expression="&quot;O trabalhador j&#225; pode se aposentar.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O trabalhador ainda n&#227;o &#233; qualificado a aposentadoria.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

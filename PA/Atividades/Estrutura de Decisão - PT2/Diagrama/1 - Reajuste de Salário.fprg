@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-07 07:09:51 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MDM6MzcgIjsxOTM0"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MDk6NTEgIjsxOzIwNDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sal" type="Real" array="False" size=""/>
+            <declare name="sex" type="Integer" array="False" size=""/>
+            <input variable="sex"/>
+            <input variable="sal"/>
+            <if expression="sex == 1">
+                <then>
+                    <if expression="sal &lt; 2000">
+                        <then>
+                            <assign variable="sal" expression="sal + (sal*0.02)"/>
+                        </then>
+                        <else>
+                            <if expression="sal &gt;= 2000">
+                                <then>
+                                    <assign variable="sal" expression="sal + (sal*0.05)"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="sex == 2">
+                        <then>
+                            <if expression="sal &lt; 2500">
+                                <then>
+                                    <assign variable="sal" expression="sal + (sal*0.04)"/>
+                                </then>
+                                <else>
+                                    <assign variable="sal" expression="sal + (sal*0.07)"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;O sal&#225;rio reajustado do funcion&#225;rio &#233;: &quot;&amp;sal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

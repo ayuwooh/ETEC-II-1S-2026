@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-11 10:51:12 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6NDg6NTcgIjsxOTQw"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6NTE6MTIgIjsxOzIwMzM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vkm, vdias, vtotal" type="Real" array="False" size=""/>
+            <input variable="vkm"/>
+            <input variable="vdias"/>
+            <assign variable="vtotal" expression="(vdias*90)+(vkm*2.20)"/>
+            <output expression="&quot;Valor total:&quot; &amp;vtotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="7 - n&#250;meros iguais ou maiores"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-30 01:05:04 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzEyOjQxOjA3IFBNOzI2NTI="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzAxOjA1OjA0IFBNOzI7Mjc1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="int1, int2, int3" type="Integer" array="False" size=""/>
+            <input variable="int1"/>
+            <input variable="int2"/>
+            <input variable="int3"/>
+            <if expression="int1 == int2 &amp;&amp; int2 == int3">
+                <then>
+                    <output expression="&quot;Todos os n&#250;meros s&#227;o iguais.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="int1 == int2">
+                        <then>
+                            <output expression="&quot;Dois n&#250;meros s&#227;o iguais. &quot; &amp;int1" newline="True"/>
+                            <if expression="int1 &gt; int3">
+                                <then>
+                                    <output expression="&quot;Eles s&#227;o maiores que: &quot; &amp;int3" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="int1 &lt; int3">
+                                        <then>
+                                            <output expression="&quot;Eles s&#227;o menores que: &quot; &amp;int3" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="int2 == int3">
+                                <then>
+                                    <output expression="&quot;Dois n&#250;meros s&#227;o iguais.&quot; &amp;int2" newline="True"/>
+                                    <if expression="int2 &gt; int1">
+                                        <then>
+                                            <output expression="&quot;Eles s&#227;o maiores que:&quot; &amp;int1" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="int2 &lt; int1">
+                                                <then>
+                                                    <output expression="&quot;Eles s&#227;o menores que:&quot; &amp;int1" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </then>
+                                <else>
+                                    <if expression="int1 == int3">
+                                        <then>
+                                            <output expression="&quot;Dois n&#250;meros s&#227;o iguais.&quot; &amp;int1" newline="True"/>
+                                            <if expression="int1 &gt; int2">
+                                                <then>
+                                                    <output expression="&quot;Eles s&#227;o maiores que:&quot; &amp;int2" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="int1 &lt; int2">
+                                                        <then>
+                                                            <output expression="&quot;Eles s&#227;o menores que:&quot; &amp;int2" newline="True"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <if expression="int1 &gt; int2 &amp;&amp; int1 &gt; int3">
+                                                <then>
+                                                    <output expression="&quot;O maior n&#250;mero &#233;: &quot; &amp;int1" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="int2 &gt; int1 &amp;&amp; int2 &gt; int3">
+                                                        <then>
+                                                            <output expression="&quot;O maior n&#250;mero &#233;: &quot; &amp;int2" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;O maior n&#250;mero &#233;: &quot; &amp;int3" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                            <if expression="int1 &lt; int2 &amp;&amp; int1 &lt; int3">
+                                                <then>
+                                                    <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp;int1" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="int2 &lt; int1 &amp;&amp; int2 &lt; int3">
+                                                        <then>
+                                                            <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp;int2" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;O menor n&#250;mero &#233;: &quot; &amp;int3" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

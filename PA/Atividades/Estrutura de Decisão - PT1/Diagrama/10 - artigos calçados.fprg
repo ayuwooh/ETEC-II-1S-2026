@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="10 - artigos cal&#231;ados"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-30 01:36:39 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzAxOjMxOjQ5IFBNOzI2NTU="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzAxOjM2OjM5IFBNOzE7Mjc2Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="value, disc" type="Real" array="False" size=""/>
+            <input variable="value"/>
+            <if expression="value &gt; 0 and value &lt; 100">
+                <then>
+                    <assign variable="disc" expression="value * (2/100)"/>
+                </then>
+                <else>
+                    <if expression="value &gt; 100 and value &lt; 300">
+                        <then>
+                            <assign variable="disc" expression="value * (5/100)"/>
+                        </then>
+                        <else>
+                            <if expression="value &gt; 300 and value &lt; 700">
+                                <then>
+                                    <assign variable="disc" expression="value * (9/100)"/>
+                                </then>
+                                <else>
+                                    <if expression="value &gt; 700 and value &lt; 1200">
+                                        <then>
+                                            <assign variable="disc" expression="value * (12/100)"/>
+                                        </then>
+                                        <else>
+                                            <if expression="value &gt; 1200">
+                                                <then>
+                                                    <assign variable="disc" expression="value * (15/100)"/>
+                                                </then>
+                                                <else>
+                                                    <assign variable="disc" expression="0"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="value" expression="value - disc"/>
+            <output expression="&quot;Desconto: &quot; &amp;disc" newline="True"/>
+            <output expression="&quot;Valor final da compra:&quot;&amp;value" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

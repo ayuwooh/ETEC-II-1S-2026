@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-11 10:32:42 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6Mjk6NDMgIjsxOTM0"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6MzI6NDIgIjsxOzIwMzU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vvalorcompra, vdesconto, vvalordesconto, vvalorfinal" type="Real" array="False" size=""/>
+            <input variable="vvalorcompra"/>
+            <input variable="vdesconto"/>
+            <assign variable="vvalordesconto" expression="(vvalorcompra*vdesconto)/100"/>
+            <assign variable="vvalorfinal" expression="vvalorcompra - vvalordesconto"/>
+            <output expression="&quot;O valor do desconto &#233;:&quot; &amp;vvalordesconto" newline="True"/>
+            <output expression="&quot;O valor final &#233;:&quot; &amp;vvalorfinal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

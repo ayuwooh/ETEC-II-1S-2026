@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-25 10:01:49 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNS1NMTI7MjAyNi0wMy0yNTsiMDk6NTc6NDIgIjsxOTQy"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNS1NMTI7MjAyNi0wMy0yNTsiMTA6MDE6NDkgIjsxOzIwMzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vint, vdiv, vresult, vrest" type="Integer" array="False" size=""/>
+            <input variable="vint"/>
+            <input variable="vdiv"/>
+            <assign variable="vresult" expression="vint/vdiv"/>
+            <assign variable="vrest" expression="vint % 2"/>
+            <if expression="vrest == 0">
+                <then>
+                    <output expression="&quot;&#233; par.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#233; impar&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

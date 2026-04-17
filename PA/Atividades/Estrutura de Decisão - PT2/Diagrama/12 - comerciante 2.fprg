@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-07 07:23:20 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MjE6NDYgIjsxOTM0"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MjM6MjAgIjsxOzIwMzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="prod" type="Real" array="False" size=""/>
+            <input variable="prod"/>
+            <if expression="prod &lt; 20">
+                <then>
+                    <assign variable="prod" expression="prod+(prod*0.45)"/>
+                </then>
+                <else>
+                    <assign variable="prod" expression="prod+(prod*0.30)"/>
+                </else>
+            </if>
+            <output expression="&quot;Novo valor do produto: &quot; &amp;prod" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

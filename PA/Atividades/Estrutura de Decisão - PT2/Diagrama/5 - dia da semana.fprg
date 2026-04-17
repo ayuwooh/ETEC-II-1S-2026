@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-07 07:26:54 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MjM6MjggIjsxOTM2"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MjY6NTQgIjsxOzIwNDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="day" type="Integer" array="False" size=""/>
+            <input variable="day"/>
+            <if expression="day == 1">
+                <then>
+                    <output expression="&quot;Domingo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="day == 2">
+                        <then>
+                            <output expression="&quot;Segunda&quot;" newline="False"/>
+                        </then>
+                        <else>
+                            <if expression="day == 3">
+                                <then>
+                                    <output expression="&quot;Ter&#231;a-Feira&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="day == 4">
+                                        <then>
+                                            <output expression="&quot;Quarta-Feira&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="day == 5">
+                                                <then>
+                                                    <output expression="&quot;Quinta-Feira&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="day == 6">
+                                                        <then>
+                                                            <output expression="&quot;Sexta-Feira&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <if expression="day == 7">
+                                                                <then>
+                                                                    <output expression="&quot;S&#225;bado&quot;" newline="True"/>
+                                                                </then>
+                                                                <else>
+                                                                    <output expression="&quot;Valor Inv&#225;lido&quot;" newline="True"/>
+                                                                </else>
+                                                            </if>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

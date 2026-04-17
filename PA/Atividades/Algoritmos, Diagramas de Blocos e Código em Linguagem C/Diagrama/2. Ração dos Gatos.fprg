@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-11 10:22:51 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6MTc6MjMgIjsxOTI5"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6MjI6NTEgIjsxOzIwMzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vpesosaco, vracaogato, vpesogramas, vconsumo, vrestante" type="Real" array="False" size=""/>
+            <input variable="vpesosaco"/>
+            <input variable="vracaogato"/>
+            <assign variable="vpesogramas" expression="vpesosaco*1000"/>
+            <assign variable="vconsumo" expression="(vracaogato*2)*5"/>
+            <assign variable="vrestante" expression="vpesogramas - vconsumo"/>
+            <output expression="&quot;Ra&#231;&#227;o restante em gramas:&quot; &amp;vrestante" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

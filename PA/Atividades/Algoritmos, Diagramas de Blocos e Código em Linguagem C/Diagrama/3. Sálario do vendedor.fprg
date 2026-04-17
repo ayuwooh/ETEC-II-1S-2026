@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-11 10:29:35 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6MjI6NTcgIjsxOTMy"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6Mjk6MzUgIjsxOzIwNDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vsalariomin, vcarrosvend, vvalorvendas, vsalariofixo, vcomissaocarro, vcomissaovendas, vsalariototal" type="Real" array="False" size=""/>
+            <input variable="vsalariomin"/>
+            <input variable="vcarrosvend"/>
+            <input variable="vvalorvendas"/>
+            <assign variable="vsalariototal" expression="(vsalariomin*2)+(vcarrosvend*50)+(vvalorvendas*0.05)"/>
+            <output expression="&quot;O sal&#225;rio total &#233;:&quot; &amp;vsalariototal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

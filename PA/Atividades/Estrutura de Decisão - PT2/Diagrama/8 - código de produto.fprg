@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-07 07:40:43 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6Mzc6MjkgIjsxOTQy"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6NDA6NDMgIjsxOzIwNDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pcode" type="Integer" array="False" size=""/>
+            <input variable="pcode"/>
+            <if expression="pcode == 1">
+                <then>
+                    <output expression="&quot;Alimento n&#227;o-perec&#237;vel&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="pcode == 2 or pcode == 3 or pcode == 4">
+                        <then>
+                            <output expression="&quot;Alimento perec&#237;vel&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="pcode == 5 or pcode == 6">
+                                <then>
+                                    <output expression="&quot;Vestu&#225;rio&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="pcode == 7">
+                                        <then>
+                                            <output expression="&quot;Hig&#237;ene Pessoal&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="pcode == 8 or pcode == 9 or pcode == 10">
+                                                <then>
+                                                    <output expression="&quot;Utens&#237;lios Dom&#233;sticos&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <output expression="&quot;Produto Inv&#225;lido&quot;" newline="True"/>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

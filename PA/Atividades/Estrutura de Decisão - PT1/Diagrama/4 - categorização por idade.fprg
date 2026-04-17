@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4 - categoriza&#231;&#227;o por idade"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-26 02:13:49 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTI2OzAyOjEyOjAzIFBNOzI2NTA="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTI2OzAyOjEzOjQ5IFBNOzE7Mjc2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vage" type="Integer" array="False" size=""/>
+            <input variable="vage"/>
+            <if expression="vage &lt;= 12">
+                <then>
+                    <output expression="&quot;Categoria Infantil&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="vage &gt; 12 &amp;&amp; vage &lt;= 18">
+                        <then>
+                            <output expression="&quot;Categoria Juvenil&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Categoria Adulto&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

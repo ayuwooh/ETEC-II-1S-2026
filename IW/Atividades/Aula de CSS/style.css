@@ -1,0 +1,62 @@
+/*Comentário*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header {
+    background: rgb(10, 10, 10);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background: rgb(20, 20, 20);
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+
+main {
+    padding: 15px;
+
+}
+
+article {
+    background: #f4f4f4;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+aside {
+    background: rgb(29, 29, 29);
+    color: white;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#main {
+    color: red;
+    text-align: center;
+}
+
+.projeto {
+    color: aquamarine;
+    animation: slideIn 2s infinite;}
+@keyframes slideIn {
+    0%, 100% { transform: scale(1)}
+    50% { transform: scale(1.2)}
+}

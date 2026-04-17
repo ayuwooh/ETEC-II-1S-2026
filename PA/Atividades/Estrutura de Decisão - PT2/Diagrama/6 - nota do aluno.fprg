@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-07 07:31:36 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MjY6NTkgIjsxOTQz"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MzE6MzYgIjsxOzIwNDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nota1, nota2, media" type="Real" array="False" size=""/>
+            <input variable="nota1"/>
+            <input variable="nota2"/>
+            <assign variable="media" expression="(nota1+nota2)/2"/>
+            <output expression="&quot;Nota: &quot;&amp;media" newline="True"/>
+            <if expression="media &gt; 9.0 and media &lt;= 10">
+                <then>
+                    <output expression="&quot;A&quot;" newline="True"/>
+                    <output expression="&quot;APROVADO&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="media &gt; 7.5 and media &lt; 9.0">
+                        <then>
+                            <output expression="&quot;B&quot;" newline="True"/>
+                            <output expression="&quot;APROVADO&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edia &gt; 6.0 and media &lt; 7.5">
+                                <then>
+                                    <output expression="&quot;C&quot;" newline="True"/>
+                                    <output expression="&quot;APROVADO&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="media &gt; 4.0 and media &lt; 6.0">
+                                        <then>
+                                            <output expression="&quot;D&quot;" newline="True"/>
+                                            <output expression="&quot;REPROVADO&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;E&quot;" newline="True"/>
+                                            <output expression="&quot;REPROVADO&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

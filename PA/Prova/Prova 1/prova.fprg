@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-08 09:25:00 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNS1NMTI7MjAyNi0wNC0wODsiMDk6MjI6MjcgIjsxOTM5"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNS1NMTI7MjAyNi0wNC0wODsiMDk6MjU6MDAgIjsxOzIwNDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qty" type="Integer" array="False" size=""/>
+            <declare name="value, revenue, cost" type="Real" array="False" size=""/>
+            <input variable="qty"/>
+            <assign variable="value" expression="qty*70"/>
+            <assign variable="revenue" expression="value*0.30"/>
+            <assign variable="cost" expression="value-revenue"/>
+            <output expression="&quot;Custo de produ&#231;&#227;o: &quot;&amp;cost" newline="True"/>
+            <output expression="&quot;Valor das vendas: &quot;&amp;value" newline="True"/>
+            <output expression="&quot;Lucro do dia: &quot;&amp;revenue" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

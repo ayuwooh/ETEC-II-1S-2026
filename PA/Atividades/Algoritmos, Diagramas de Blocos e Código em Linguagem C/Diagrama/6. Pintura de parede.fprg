@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-11 10:47:57 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6NDQ6NDggIjsxOTM2"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNS1NMTc7MjAyNi0wMy0xMTsiMTA6NDc6NTcgIjsxOzIwNDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vlargura, valtura, vareatinta, varea, vlatas" type="Real" array="False" size=""/>
+            <input variable="vlargura"/>
+            <input variable="valtura"/>
+            <input variable="vareatinta"/>
+            <assign variable="varea" expression="vlargura*valtura"/>
+            <assign variable="vlatas" expression="varea/vareatinta"/>
+            <output expression="&quot;&#193;rea da parede:&quot; &amp;varea" newline="True"/>
+            <output expression="&quot;Quantidade de latas necess&#225;rias:&quot; &amp;vlatas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

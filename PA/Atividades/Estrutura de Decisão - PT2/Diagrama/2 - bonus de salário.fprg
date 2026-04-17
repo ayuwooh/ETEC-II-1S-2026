@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-07 07:17:19 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MTM6NDIgIjsxOTMx"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MTc6MTkgIjsxOzIwNDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="time, child, marriage, extrah, sal" type="Real" array="False" size=""/>
+            <input variable="time"/>
+            <input variable="child"/>
+            <input variable="marriage"/>
+            <input variable="extrah"/>
+            <if expression="time &gt; 5">
+                <then>
+                    <if expression="child &gt; 2">
+                        <then>
+                            <if expression="marriage &gt; 2">
+                                <then>
+                                    <if expression="extrah &gt; 10">
+                                        <then>
+                                            <assign variable="sal" expression="sal+(sal*0.05)"/>
+                                            <output expression="&quot;O sal&#225;rio reajustado &#233; de: &quot;&amp;sal" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </then>
+                                <else/>
+                            </if>
+                        </then>
+                        <else/>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;O funcion&#225;rio n&#227;o ter&#225; o sal&#225;rio reajustado.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

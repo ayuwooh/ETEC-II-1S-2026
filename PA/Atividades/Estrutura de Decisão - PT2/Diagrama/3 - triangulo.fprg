@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-07 07:21:41 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MTc6MjIgIjsxOTMz"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6MjE6NDEgIjsxOzIwMzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="tri1, tri2, tri3" type="Real" array="False" size=""/>
+            <input variable="tri1"/>
+            <input variable="tri2"/>
+            <input variable="tri3"/>
+            <if expression="tri1==tri2 and tri2==tri3">
+                <then>
+                    <output expression="&quot;Tri&#226;ngulo Equil&#225;tero&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="tri1 == tri2 and tri1 != tri3 or tri1 == tri3 and tri1 != tri2 or tri2 == tri3 and tri2 != tri1">
+                        <then>
+                            <output expression="&quot;Tri&#226;ngulo Is&#243;celes&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Tri&#226;ngulo Escaleno&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

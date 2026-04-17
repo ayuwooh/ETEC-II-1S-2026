@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-07 07:47:50 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6NDI6MjcgIjsxOTM2"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6NDc6NTAgIjsxOzIwNDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sal, rval, rsal" type="Real" array="False" size=""/>
+            <declare name="rperc" type="String" array="False" size=""/>
+            <input variable="sal"/>
+            <if expression="sal &lt;= 1000">
+                <then>
+                    <assign variable="rval" expression="sal*0.20"/>
+                    <assign variable="rperc" expression="&quot;20%&quot;"/>
+                </then>
+                <else>
+                    <if expression="sal &gt; 1000 and sal &lt; 1500">
+                        <then>
+                            <assign variable="rval" expression="sal*0.10"/>
+                            <assign variable="rperc" expression="&quot;15%&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="sal &gt; 1500 and sal &lt; 2500">
+                                <then>
+                                    <assign variable="rval" expression="sal*0.10"/>
+                                    <assign variable="rperc" expression="&quot;10%&quot;"/>
+                                </then>
+                                <else>
+                                    <assign variable="rval" expression="sal*0.05"/>
+                                    <assign variable="rperc" expression="&quot;5%&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="rsal" expression="sal+rval"/>
+            <output expression="&quot;Sal&#225;rio antes do reajuste: &quot; &amp;sal" newline="True"/>
+            <output expression="&quot;Porcentagem do reajuste: &quot; &amp;rperc" newline="True"/>
+            <output expression="&quot;Valor do reajuste: &quot; &amp;rval" newline="True"/>
+            <output expression="&quot;O novo sal&#225;rio: &quot; &amp;rsal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

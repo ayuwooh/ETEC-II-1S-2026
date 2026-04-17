@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="5 - nota do aluno"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-30 12:39:23 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzEyOjMyOjQxIFBNOzI2NTA="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzEyOjM5OjIzIFBNOzE7Mjc2NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vnota1, vnota2, vnota3, vnota4, vmedia, vpresenca" type="Real" array="False" size=""/>
+            <declare name="vaulas, vfaltas" type="Integer" array="False" size=""/>
+            <input variable="vnota1"/>
+            <input variable="vnota2"/>
+            <input variable="vnota3"/>
+            <input variable="vnota4"/>
+            <input variable="vaulas"/>
+            <input variable="vfaltas"/>
+            <assign variable="vpresenca" expression="((vaulas-vfaltas)/vaulas)*100"/>
+            <output expression="&quot;Presen&#231;a: &quot; &amp;vpresenca" newline="True"/>
+            <assign variable="vmedia" expression="(vnota1+vnota2+vnota3+vnota4)/4"/>
+            <output expression="&quot;M&#233;dia: &quot; &amp;vmedia" newline="True"/>
+            <if expression="vpresenca &gt;= 75">
+                <then>
+                    <if expression="vmedia &gt;= 7">
+                        <then>
+                            <output expression="&quot;Aluno aprovado.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="vmedia &gt;= 5 and vmedia &lt; 7">
+                                <then>
+                                    <output expression="&quot;Aluno em recupera&#231;&#227;o.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Aluno reprovado.&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;Aluno reprovado por falta.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hemerson"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-09-25 07:57:37 "/>
+        <attribute name="created" value="aGVtZXJzb247TEFCNS1NUFJPRjsyMDI1LTA5LTI1OyIwNzowOTo1MyAiOzI3NjI="/>
+        <attribute name="edited" value="aGVtZXJzb247TEFCNS1NUFJPRjsyMDI1LTA5LTI1OyIwNzo1NzozNyAiOzM7Mjg3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vcont, vnum, vsoma" type="Integer" array="False" size=""/>
+            <assign variable="vcont" expression="0"/>
+            <assign variable="vsoma" expression="0"/>
+            <while expression="vcont&lt;10">
+                <input variable="vnum"/>
+                <assign variable="vsoma" expression="vsoma+vnum"/>
+                <assign variable="vcont" expression="vcont+1"/>
+            </while>
+            <output expression="&quot;O valor da soma &#233; :&quot;&amp;vsoma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

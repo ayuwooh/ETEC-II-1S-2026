@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="8 - venda de produto"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-30 01:24:33 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzAxOjA1OjE1IFBNOzI2NDk="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTMwOzAxOjI0OjMzIFBNOzE7Mjc1OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="price, tax" type="Real" array="False" size=""/>
+            <declare name="state" type="String" array="False" size=""/>
+            <input variable="price"/>
+            <input variable="state"/>
+            <if expression="state == &quot;SP&quot;">
+                <then>
+                    <assign variable="tax" expression="price * (25/100)"/>
+                </then>
+                <else>
+                    <if expression="state == &quot;RJ&quot;">
+                        <then>
+                            <assign variable="tax" expression="price * (18/100)"/>
+                        </then>
+                        <else>
+                            <if expression="state == &quot;PR&quot;">
+                                <then>
+                                    <assign variable="tax" expression="price * (15/100)"/>
+                                </then>
+                                <else>
+                                    <if expression="state == &quot;SC&quot;">
+                                        <then>
+                                            <assign variable="tax" expression="price * (12/100)"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;Estado n&#227;o cadastrado!&quot;" newline="True"/>
+                                            <assign variable="tax" expression="-1"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <if expression="tax != -1">
+                <then>
+                    <assign variable="price" expression="price + tax"/>
+                    <output expression="&quot;Valor do imposto: &quot; &amp;tax" newline="True"/>
+                    <output expression="&quot;Valor total com imposto: &quot; &amp;price" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-07 07:42:23 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6NDA6NDUgIjsxOTM0"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMTE7MjAyNi0wNC0wNzsiMDc6NDI6MjMgIjsxOzIwNDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="loan, inst, sal, limit" type="Real" array="False" size=""/>
+            <input variable="loan"/>
+            <input variable="inst"/>
+            <input variable="sal"/>
+            <assign variable="inst" expression="loan/inst"/>
+            <assign variable="loan" expression="loan*1.10"/>
+            <assign variable="limit" expression="sal*0.30"/>
+            <if expression="inst &lt;= limit">
+                <then>
+                    <output expression="&quot;Empr&#233;stimo aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Empr&#233;stimo negado.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

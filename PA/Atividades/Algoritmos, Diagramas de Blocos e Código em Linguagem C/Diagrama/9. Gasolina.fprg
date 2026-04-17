@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="9. Gasolina"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-03-11 11:52:17 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTExOzExOjUwOjAzIFBNOzI2NDY="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTAzLTExOzExOjUyOjE3IFBNOzE7Mjc2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vprecolitro, vdinheiro, vlitros" type="Real" array="False" size=""/>
+            <input variable="vprecolitro"/>
+            <input variable="vdinheiro"/>
+            <assign variable="vlitros" expression="vdinheiro/vprecolitro"/>
+            <output expression="&quot;A quantidade de litros abastecida &#233;:&quot; &amp;vlitros" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
