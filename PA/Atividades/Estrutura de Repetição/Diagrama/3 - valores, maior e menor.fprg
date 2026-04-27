@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-27 01:08:44 AM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI3OzAxOjAxOjM2IEFNOzI2NDA="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI3OzAxOjA4OjQ0IEFNOzI7Mjc1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, count, lowest, highest" type="Integer" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <while expression="count &lt; 15">
+                <assign variable="count" expression="count + 1"/>
+                <input variable="num"/>
+                <if expression="count == 1">
+                    <then>
+                        <assign variable="highest" expression="num"/>
+                        <assign variable="lowest" expression="num"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="num &gt; highest">
+                    <then>
+                        <assign variable="highest" expression="num"/>
+                    </then>
+                    <else>
+                        <if expression="num &lt; lowest">
+                            <then>
+                                <assign variable="lowest" expression="num"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;O menor valor &#233;: &quot;&amp;lowest" newline="True"/>
+            <output expression="&quot;O maior valor &#233;: &quot;&amp;highest" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

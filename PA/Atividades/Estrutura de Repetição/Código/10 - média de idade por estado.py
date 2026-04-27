@@ -1,5 +1,5 @@
-SP, MG, RJ = 1, 2, 3
-agesp, agemg, agerj = 0, 0, 0
+state, SP, MG, RJ= 0, 1, 2, 3
+age, agesp, agemg, agerj = 0, 0, 0, 0
 spcount, mgcount, rjcount = 0, 0, 0
 oldestsp, oldestmg, oldestrj = 0, 0, 0
 
@@ -42,13 +42,11 @@ while True:
         spcount += 1
         if age > oldestsp:
             oldestsp = age
-
     elif state == MG:
         agemg += age
         mgcount += 1
         if age > oldestmg:
             oldestmg = age
-
     elif state == RJ:
         agerj += age
         rjcount += 1
@@ -57,16 +55,16 @@ while True:
 
     print("-" * 30)
 
-print("-" * 30)
-
 if spcount > 0:
-    print(f"Média de idade em SP: {agesp/spcount}")
+    agesp = agesp / spcount
+    print(f"Média de idade em SP: {agesp}")
     print(f"Pessoa mais velha em SP: {oldestsp}")
 
 if mgcount > 0:
-    print(f"Média de idade em MG: {agemg/mgcount}")
+    agemg = agemg / mgcount 
+    print(f"Média de idade em MG: {agemg}")
     print(f"Pessoa mais velha em MG: {oldestmg}")
-
 if rjcount > 0:
-    print(f"Média de idade em RJ: {agerj/rjcount}")
+    agerj = agerj / rjcount
+    print(f"Média de idade em RJ: {agerj}")
     print(f"Pessoa mais velha em RJ: {oldestrj}")

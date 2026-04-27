@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="soma"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-27 01:01:14 AM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI2OzA4OjE1OjAxIFBNOzI2NTg="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI3OzAxOjAxOjE0IEFNOzEwOzI3OTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, sum" type="Integer" array="False" size=""/>
+            <declare name="while" type="Boolean" array="False" size=""/>
+            <assign variable="while" expression="True"/>
+            <assign variable="num" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="while = True">
+                <input variable="num"/>
+                <assign variable="sum" expression="sum + num"/>
+                <if expression="num &lt; 0">
+                    <then>
+                        <assign variable="while" expression="False"/>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;Soma de todos os valores: &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

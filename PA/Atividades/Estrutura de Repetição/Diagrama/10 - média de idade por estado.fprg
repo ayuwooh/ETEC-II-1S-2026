@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="10"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-27 11:35:34 "/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI3OzAyOjA3OjEyIEFNOzI2NDE="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI3OzAyOjQwOjA1IEFNOzE0OzI4MDA="/>
+        <attribute name="edited" value="Q3Jpc3RpYW5vO0RFU0tUT1AtMVQxRTZCQjsyMDI2LTA0LTI3OyIxMTozNTozNCAiOzE7MzI2Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="state, SP, MG, RJ, spcount, mgcount, rjcount, oldestsp, oldestmg, oldestrj, age" type="Integer" array="False" size=""/>
+            <declare name="agesp, agemg, agerj" type="Real" array="False" size=""/>
+            <declare name="while, break" type="Boolean" array="False" size=""/>
+            <assign variable="SP" expression="1"/>
+            <assign variable="MG" expression="2"/>
+            <assign variable="RJ" expression="3"/>
+            <assign variable="spcount" expression="0"/>
+            <assign variable="mgcount" expression="0"/>
+            <assign variable="rjcount" expression="0"/>
+            <assign variable="agesp" expression="0"/>
+            <assign variable="agemg" expression="0"/>
+            <assign variable="agerj" expression="0"/>
+            <assign variable="oldestsp" expression="0"/>
+            <assign variable="oldestmg" expression="0"/>
+            <assign variable="oldestrj" expression="0"/>
+            <assign variable="break" expression="False"/>
+            <while expression="break == False">
+                <assign variable="while" expression="True"/>
+                <while expression="while == True and break == False">
+                    <output expression="&quot;Estados dispon&#237;veis: 1 - SP, 2 - MG, 3 - RJ&quot;" newline="True"/>
+                    <input variable="state"/>
+                    <if expression="state &lt; 0">
+                        <then>
+                            <assign variable="break" expression="True"/>
+                        </then>
+                        <else>
+                            <if expression="state != 1 and state != 2 and state != 3">
+                                <then>
+                                    <output expression="&quot;Estado inv&#225;lido. Use 1, 2, 3 ou -1 para sair.&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <input variable="age"/>
+                                    <if expression="age &lt;= 0">
+                                        <then>
+                                            <output expression="&quot;Idade inv&#225;lida. Por favor, digite um n&#250;mero positivo.&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="while" expression="False"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </while>
+                <if expression="state == SP">
+                    <then>
+                        <assign variable="agesp" expression="agesp + age"/>
+                        <assign variable="spcount" expression="spcount + 1"/>
+                        <if expression="age &gt; oldestsp">
+                            <then>
+                                <assign variable="oldestsp" expression="age"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <if expression="state == MG">
+                            <then>
+                                <assign variable="agemg" expression="agemg + age"/>
+                                <assign variable="mgcount" expression="mgcount + 1"/>
+                                <if expression="age &gt; oldestmg">
+                                    <then>
+                                        <assign variable="oldestmg" expression="age"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </then>
+                            <else>
+                                <if expression="state == RJ">
+                                    <then>
+                                        <assign variable="agerj" expression="agerj + age"/>
+                                        <assign variable="rjcount" expression="rjcount + 1"/>
+                                        <if expression="age &gt; oldestrj">
+                                            <then>
+                                                <assign variable="oldestrj" expression="age"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <if expression="spcount &gt; 0">
+                <then>
+                    <assign variable="agesp" expression="agesp / spcount"/>
+                    <output expression="&quot;M&#233;dia de idade em SP: &quot;&amp;agesp" newline="True"/>
+                    <output expression="&quot;Pessoa mais velha em SP: &quot;&amp;oldestsp" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="mgcount &gt; 0">
+                <then>
+                    <assign variable="agemg" expression="agemg / mgcount"/>
+                    <output expression="&quot;M&#233;dia de idade em MG: &quot;&amp;agemg" newline="True"/>
+                    <output expression="&quot;Pessoa mais velha em MG: &quot;&amp;oldestmg" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="rjcount &gt; 0">
+                <then>
+                    <assign variable="agerj" expression="agerj / rjcount"/>
+                    <output expression="&quot;M&#233;dia de idade em RJ: &quot;&amp;agerj" newline="True"/>
+                    <output expression="&quot;Pessoa mais velha em RJ: &quot;&amp;oldestrj" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

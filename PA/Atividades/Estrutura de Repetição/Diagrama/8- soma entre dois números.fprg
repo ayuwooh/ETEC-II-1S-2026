@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="8"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-27 01:58:10 AM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI3OzAxOjU0OjQyIEFNOzI2NDU="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI3OzAxOjU4OjEwIEFNOzE7Mjc1Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, sum, mid" type="Integer" array="False" size=""/>
+            <declare name="while" type="Boolean" array="False" size=""/>
+            <assign variable="while" expression="True"/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <assign variable="sum" expression="num1 + num2"/>
+            <assign variable="mid" expression="num1"/>
+            <while expression="while == True">
+                <assign variable="mid" expression="mid + 1"/>
+                <if expression="mid == num2">
+                    <then>
+                        <assign variable="while" expression="False"/>
+                    </then>
+                    <else>
+                        <assign variable="sum" expression="sum + mid"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;A soma entre os n&#250;meros &#233;: &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

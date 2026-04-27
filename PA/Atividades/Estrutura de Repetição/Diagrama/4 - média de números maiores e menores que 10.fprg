@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="4"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-27 01:16:42 AM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI3OzAxOjExOjMxIEFNOzI2MzY="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI3OzAxOjE2OjQyIEFNOzM7Mjc1Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, count, counthigh, countlow, sumhigh, sumlow" type="Integer" array="False" size=""/>
+            <declare name="highavg, lowavg" type="Real" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <assign variable="countlow" expression="0"/>
+            <assign variable="sumlow" expression="0"/>
+            <assign variable="counthigh" expression="0"/>
+            <assign variable="sumhigh" expression="0"/>
+            <while expression="count &lt; 10">
+                <assign variable="count" expression="count + 1"/>
+                <input variable="num"/>
+                <if expression="num &gt;= 10">
+                    <then>
+                        <assign variable="counthigh" expression="counthigh + 1"/>
+                        <assign variable="sumhigh" expression="sumhigh + num"/>
+                    </then>
+                    <else>
+                        <assign variable="countlow" expression="countlow + 1"/>
+                        <assign variable="sumlow" expression="sumlow + num"/>
+                    </else>
+                </if>
+            </while>
+            <assign variable="highavg" expression="sumhigh/counthigh"/>
+            <assign variable="lowavg" expression="sumlow/countlow"/>
+            <output expression="&quot;M&#233;dia dos valores iguais ou acima de 10: &quot;&amp;highavg" newline="True"/>
+            <output expression="&quot;M&#233;dia dos valores abaixo de 10: &quot;&amp;lowavg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

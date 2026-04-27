@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="test"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-26 08:13:39 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI2OzA2OjM5OjA2IFBNOzI2Njc="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA0LTI2OzA4OjEzOjM5IFBNOzM7Mjc3Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, sumeven, sumuneven, count, evenoruneven" type="Integer" array="False" size=""/>
+            
+            <assign variable="num" expression="0"/>
+            <assign variable="sumeven" expression="0"/>
+            <assign variable="sumuneven" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <assign variable="evenoruneven" expression="0"/>
+
+            <while expression="count &lt; 10">
+                <assign variable="count" expression="count + 1"/>
+                <input variable="num"/>
+                <assign variable="evenoruneven" expression="num mod 2"/>
+                
+                <if expression="evenoruneven = 0">
+                    <then>
+                        <assign variable="sumeven" expression="sumeven + num"/>
+                    </then>
+                    <else>
+                        <assign variable="sumuneven" expression="sumuneven + num"/>
+                    </else>
+                </if>
+            </while>
+
+            <output expression="&quot;Soma dos valores pares: &quot; &amp; sumeven" newline="True"/>
+            <output expression="&quot;Soma dos valores &#237;mpares: &quot; &amp; sumuneven" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

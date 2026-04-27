@@ -5,8 +5,10 @@ try:
     num2 = int(input("Digite o segundo número: "))
 except ValueError:
     print("Este não é um número. 🥹")
+
 sum = num1 + num2
 mid = num1
+
 while True:
     mid += 1
     if mid == num2:
