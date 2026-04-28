@@ -1,0 +1,58 @@
+@startuml E-Commerce
+
+abstract class Usuario{
+    -nome:String
+    -id:int
+    -email:String
+    -senha:String
+}
+
+class Cliente{
+    +buscar():void
+    +comprar():void
+    +rastrear():void
+}
+
+class Admin{
+    +gerirEstoque():void
+    +aprovarPedido():void
+}
+
+class SuperAdmin{
+    +gerirPermissao():void
+    +log():void
+    +backup():void
+}
+
+class Produto{
+    -nome:String
+    -preço:float
+    -qtdEstoque:int
+}
+
+class Pedido{
+    -dataPedido:String
+    -status:String
+    -valorTotal:float
+}
+
+class itemPedido{
+    -qtd:int
+}
+
+enum StatusPedido{
+    PENDENTE
+    PAGO
+    ENVIADO
+}
+
+Usuario <|-- Cliente
+Usuario <|-- Admin
+Admin <|-- SuperAdmin
+
+Cliente "1" -- "0..*" Pedido : realiza
+Admin "1" -- "0..*" Pedido : processa
+Pedido "1" *-- "1..*" itemPedido
+itemPedido "*" -- "1" Produto : contém
+
+@enduml
