@@ -213,8 +213,6 @@
 
 **Saída:** apresentar os resultados da multiplicação
 
----
-
 ## Algoritmo
 
 1. Declarar e inicializar as variáveis `val = 0`, `number = 0`, `result = 0`.
