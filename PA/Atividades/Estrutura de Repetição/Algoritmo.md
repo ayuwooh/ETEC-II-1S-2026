@@ -65,11 +65,11 @@
 
 **Entrada:** valores inteiros (`num`)
 
-**Processamento:**  
+**Processamento:**
 
-- soma e contagem dos valores maiores ou iguais a 10 (`sumhigh`, `counthigh`)  
-- soma e contagem dos valores menores que 10 (`sumlow`, `countlow`)  
-- cálculo das médias (`highavg`, `lowavg`)  
+- soma e contagem dos valores maiores ou iguais a 10 (`sumhigh`, `counthigh`)
+- soma e contagem dos valores menores que 10 (`sumlow`, `countlow`)
+- cálculo das médias (`highavg`, `lowavg`)
 
 **Saída:** apresentar (`highavg`) e (`lowavg`)
 
@@ -96,11 +96,11 @@
 
 **Entrada:** valor inteiro (`guess`)
 
-**Processamento:**  
+**Processamento:**
 
-- geração de um número aleatório entre 1 e 10 (`num`)  
-- controle de tentativas (`count`)  
-- verificação do palpite em relação ao número gerado  
+- geração de um número aleatório entre 1 e 10 (`num`)
+- controle de tentativas (`count`)
+- verificação do palpite em relação ao número gerado
 
 **Saída:** mensagens informando acerto, erro ou derrota
 
@@ -122,12 +122,12 @@
 
 **Entrada:** valores inteiros (`num`)
 
-**Processamento:**  
+**Processamento:**
 
-- soma dos valores (`sum`)  
-- identificação do maior (`high`) e menor valor (`low`)  
-- remoção do maior e menor da soma  
-- cálculo da média (`avg`)  
+- soma dos valores (`sum`)
+- identificação do maior (`high`) e menor valor (`low`)
+- remoção do maior e menor da soma
+- cálculo da média (`avg`)
 
 **Saída:** apresentar (`avg`)
 
@@ -152,10 +152,10 @@
 
 **Entrada:** notas reais (`grade`)
 
-**Processamento:**  
+**Processamento:**
 
-- cálculo da média de cada aluno (`avg`)  
-- contagem de alunos aprovados (`spass`) e reprovados (`notpass`)  
+- cálculo da média de cada aluno (`avg`)
+- contagem de alunos aprovados (`spass`) e reprovados (`notpass`)
 
 **Saída:** apresentar (`spass`) e (`notpass`)
 
@@ -182,9 +182,9 @@
 
 **Entrada:** valores inteiros (`num1`, `num2`)
 
-**Processamento:**  
+**Processamento:**
 
-- soma dos valores entre `num1` e `num2` (`sum`)  
+- soma dos valores entre `num1` e `num2` (`sum`)
 
 **Saída:** apresentar (`sum`)
 
@@ -207,9 +207,9 @@
 
 **Entrada:** valor inteiro (`val`)
 
-**Processamento:**  
+**Processamento:**
 
-- cálculo da tabuada de 1 a 10 (`result`)  
+- cálculo da tabuada de 1 a 10 (`result`)
 
 **Saída:** apresentar os resultados da multiplicação
 
@@ -229,12 +229,12 @@
 
 **Entrada:** estado (`state`) e idade (`age`)
 
-**Processamento:**  
+**Processamento:**
 
-- soma das idades por estado (`agesp`, `agemg`, `agerj`)  
-- contagem de pessoas por estado (`spcount`, `mgcount`, `rjcount`)  
-- identificação da maior idade por estado (`oldestsp`, `oldestmg`, `oldestrj`)  
-- cálculo das médias por estado  
+- soma das idades por estado (`agesp`, `agemg`, `agerj`)
+- contagem de pessoas por estado (`spcount`, `mgcount`, `rjcount`)
+- identificação da maior idade por estado (`oldestsp`, `oldestmg`, `oldestrj`)
+- cálculo das médias por estado
 
 **Saída:** apresentar médias de idade e maior idade para cada estado
 
@@ -247,6 +247,7 @@
    `oldestsp = 0`, `oldestmg = 0`, `oldestrj = 0`.
 
 2. Enquanto verdadeiro, executar:
+
    1. Apresentar as opções de estados: `1 - SP`, `2 - MG`, `3 - RJ`.
    2. Ler um valor inteiro para `state`.
       1. Se `state` for menor que `0`, encerrar o laço.
@@ -269,11 +270,13 @@
       3. Se `age` for maior que `oldestrj`, atualizar `oldestrj`.
 
 3. Se `spcount` for maior que `0`:
+
    1. Calcular a média: `agesp = agesp / spcount`.
    2. Apresentar a média de idade em SP (`agesp`).
    3. Apresentar a maior idade em SP (`oldestsp`).
 
 4. Se `mgcount` for maior que `0`:
+
    1. Calcular a média: `agemg = agemg / mgcount`.
    2. Apresentar a média de idade em MG (`agemg`).
    3. Apresentar a maior idade em MG (`oldestmg`).
