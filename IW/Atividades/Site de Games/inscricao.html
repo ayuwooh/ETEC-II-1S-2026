@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horto Nexus 2026 - Inscrição</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icon.png" />
+  </head>
+  <body>
+    <header id="cabecalho-principal">
+      <h1 class="logo-evento">Horto Nexus 2026</h1>
+      <nav class="menu-navegacao">
+        <a href="index.html" class="link-nav">Início</a>
+        <a href="programacao.html" class="link-nav">Programação</a>
+        <a href="inscricao.html" class="link-nav">Inscrição</a>
+      </nav>
+    </header>
+
+    <main id="conteudo-inscricao">
+      <section id="secao-formulario">
+        <h2 class="titulo-secao">Formulário de Inscrição</h2>
+        <p class="instrucoes">
+          Preencha os campos abaixo para garantir sua vaga no Horto Nexus!
+        </p>
+
+        <form id="form-evento" action="#" method="post">
+          <div class="campo-grupo">
+            <label for="nome" class="label-campo">Nome Completo:</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              class="input-texto"
+              required
+            />
+          </div>
+
+          <div class="campo-grupo">
+            <label for="email" class="label-campo">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="input-texto"
+              required
+            />
+          </div>
+
+          <div class="campo-grupo">
+            <label for="idade" class="label-campo">Idade:</label>
+            <input
+              type="number"
+              id="idade"
+              name="idade"
+              class="input-numero"
+              min="0"
+            />
+          </div>
+
+          <div class="campo-grupo">
+            <label for="tipo-participacao" class="label-campo"
+              >Tipo de Participação:</label
+            >
+            <select
+              id="tipo-participacao"
+              name="tipo_participacao"
+              class="input-select"
+            >
+              <option value="visitante">Visitante</option>
+              <option value="competidor">Competidor</option>
+              <option value="expositor">Expositor</option>
+            </select>
+          </div>
+
+          <fieldset class="campo-conjunto">
+            <legend>Jogos para competir (se aplicável):</legend>
+            <label class="label-checkbox"
+              ><input type="checkbox" name="jogos" value="valorant" />
+              Valorant</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" name="jogos" value="lol" /> League of
+              Legends</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" name="jogos" value="sf6" /> Street Fighter
+              6</label
+            >
+            <label class="label-checkbox"
+              ><input type="checkbox" name="jogos" value="tekken8" /> Tekken
+              8</label
+            >
+          </fieldset>
+
+          <fieldset class="campo-conjunto">
+            <legend>Gênero de Jogo Preferido:</legend>
+            <label class="label-radio"
+              ><input type="radio" name="genero_pref" value="fps" /> FPS</label
+            >
+            <label class="label-radio"
+              ><input type="radio" name="genero_pref" value="moba" />
+              MOBA</label
+            >
+            <label class="label-radio"
+              ><input type="radio" name="genero_pref" value="luta" />
+              Luta</label
+            >
+            <label class="label-radio"
+              ><input type="radio" name="genero_pref" value="rpg" /> RPG</label
+            >
+          </fieldset>
+
+          <div class="campo-grupo">
+            <label for="comentarios" class="label-campo"
+              >Comentários Adicionais:</label
+            >
+            <textarea
+              id="comentarios"
+              name="comentarios"
+              class="input-textarea"
+              rows="4"
+            ></textarea>
+          </div>
+
+          <div class="campo-botao">
+            <button type="submit" id="btn-enviar" class="botao-principal">
+              Enviar Inscrição
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer id="rodape-evento">
+        <hr />
+        <p class="rodape-texto">
+          <strong>Horto Nexus 2026</strong> - Onde os mundos se conectam.
+        </p>
+        <p class="rodape-contato">
+          Contato:
+          <a href="mailto:contato@hortonexus.com.br" class="link-footer"
+            >contato@hortonexus.com.br</a
+          >
+          | Tel: (19) 9999-9999
+        </p>
+        <p class="rodape-copyright">&copy; 2026 Horto Nexus Eventos Ltda.</p>
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+/* Configurações Gerais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* Fonte para textos comuns */
+}
+
+body {
+  background-color: #73d2de; /* Azul Claro */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho e Navegação */
+#cabecalho-principal {
+  background-color: #8f2d56; /* Vinho */
+  color: #ffbc42; /* Amarelo */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 5px solid #d81159; /* Rosa Choque */
+}
+
+.logo-evento {
+  font-size: 3.5rem; /* Aumentamos o tamanho */
+  font-weight: 700;
+  color: #ffbc42; /* O amarelo da sua paleta */
+  text-transform: uppercase;
+  letter-spacing: 5px;
+
+  /* Camadas de sombra para criar efeito de profundidade e brilho neon */
+  text-shadow: 3px 3px 0px #8f2d56,
+    /* Sombra sólida cor Vinho */ 6px 6px 0px rgba(0, 0, 0, 0.2),
+    /* Sombra de profundidade */ 0 0 15px rgba(255, 188, 66, 0.6); /* Brilho neon amarelo */
+
+  transition: all 0.4s ease;
+  cursor: default;
+  display: inline-block;
+}
+
+/* Efeito de "Pulsação" quando passar o mouse */
+.logo-evento:hover {
+  color: #fff;
+  transform: scale(1.05) skewX(-5deg); /* Dá uma leve inclinada e cresce */
+  text-shadow: 0 0 20px #d81159,
+    /* Muda o brilho para o Rosa Choque */ 0 0 40px #d81159;
+}
+
+.menu-navegacao {
+  margin-top: 15px;
+}
+
+.link-nav {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+
+.link-nav:hover {
+  background-color: #d81159;
+  border-radius: 5px;
+}
+
+/* Estrutura do Conteúdo */
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Banner (Index) */
+#banner {
+  background-color: #218380; /* Verde Petróleo */
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo-banner {
+  color: #ffbc42;
+  font-size: 2rem;
+}
+
+/* Títulos e Listas */
+.titulo-secao {
+  color: #8f2d56;
+  border-left: 8px solid #d81159;
+  padding-left: 15px;
+  margin: 25px 0 15px;
+}
+
+.subtitulo-atracao {
+  color: #218380;
+  margin-top: 15px;
+}
+
+.lista-itens {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.lista-itens li::before {
+  content: "⚡ ";
+}
+
+/* Estilo da Tabela (Programação) */
+.tabela-programacao {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tabela-programacao th {
+  background-color: #218380;
+  color: white;
+  padding: 12px;
+}
+
+.tabela-programacao td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.linha-destaque {
+  background-color: #fff9e6; /* Leve destaque amarelo */
+  font-weight: bold;
+  color: #d81159;
+}
+
+/* Formulário (Inscrição) */
+.campo-grupo {
+  margin-bottom: 15px;
+}
+
+.label-campo {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #8f2d56;
+}
+
+.input-texto,
+.input-numero,
+.input-select,
+.input-textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #73d2de;
+  border-radius: 5px;
+}
+
+.campo-conjunto {
+  border: 1px solid #218380;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.botao-principal {
+  background-color: #d81159;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.botao-principal:hover {
+  background-color: #8f2d56;
+  transform: scale(1.02);
+}
+
+/* Rodapé */
+#rodape-evento {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+
+.rodape-texto {
+  padding-top: 20px;
+}
+
+.link-footer {
+  color: #ffbc42;
+  text-decoration: none;
+}
+
+/* 1. Efeito de Gradiente no Banner e Header */
+#cabecalho-principal {
+  background: linear-gradient(135deg, #8f2d56 0%, #d81159 100%);
+  border-bottom: 4px solid #ffbc42;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+#banner {
+  background: linear-gradient(45deg, #218380 0%, #73d2de 100%);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+/* 3. Botões e Cards com Efeito de Brilho */
+.botao-principal {
+  box-shadow: 0 4px 0 #8f2d56; /* Efeito 3D no botão */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.botao-principal:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.card-destaque {
+  border-left: 5px solid #ffbc42;
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 0 10px 10px 0;
+  transition: 0.3s;
+}
+
+.card-destaque:hover {
+  background: #fff;
+  transform: scale(1.02);
+  box-shadow: 10px 10px 0px #73d2de; /* Sombra sólida estilo HQ */
+}
+
+/* 4. Links com Underline Animado */
+.link-nav {
+  position: relative;
+}
+
+.link-nav::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffbc42;
+  transition: width 0.3s ease;
+}
+
+.link-nav:hover::after {
+  width: 100%;
+}
+
+/* 5. Customizando a Tabela e Inputs */
+.tabela-programacao tr:hover {
+  background-color: rgba(115, 210, 222, 0.2);
+}
+
+/* .flex-lista {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+} */
+
+.stockimgs {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.stockimg {
+  width: 33%;
+  height: 33%;
+  border-radius: 8px;
+  padding: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #d81159;
+  box-shadow: 0 0 10px rgba(216, 17, 89, 0.3);
+}
+
+/* Toque final: Seleção de texto personalizada */
+::selection {
+  background: #ffbc42;
+  color: #8f2d56;
+}
+/* 2. Animação de Entrada (Fade In) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+main {
+  animation: fadeInUp 0.8s ease-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+.logo-evento,
+.botao-principal {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+}
