@@ -1,0 +1,30 @@
+@startuml Biblioteca Municipal
+
+class Livro{
+    -titulo:String
+    -isbn:String
+    -disponivel:boolean
+    +reserva():void
+}
+class Empréstimo{
+    -data:String
+    -dataRetorno:String
+    +acaba():void
+}
+class Usuário{
+    -nome:String
+    -id:int
+    +pegaEmprestado():void
+}
+class Bibliotecário{
+    -nome:String
+    -id:int
+    +gerencia():void
+}
+
+Usuário "1" -- "N" Empréstimo : faz
+Livro "1" -- "N" Empréstimo : participa
+Bibliotecário "1" -- "N" Acervo : gerencia
+Bibliotecário "1" -- "N" Multa : gerencia
+
+@enduml
