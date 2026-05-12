@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-06 08:05:05 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDc6NTk6MzIgIjsxOTQw"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6MDU6MDUgIjsxOzIwNDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, count, sum" type="Integer" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="avg" expression="0"/>
+            <for variable="count" start="1" end="15" direction="inc" step="1">
+                <input variable="num"/>
+                <assign variable="sum" expression="sum + num"/>
+            </for>
+            <assign variable="avg" expression="sum / 15"/>
+            <output expression="&quot;A soma dos n&#250;meros digitados &#233;: &quot; &amp;sum" newline="True"/>
+            <output expression="&quot;A m&#233;dia dos n&#250;meros digitados &#233;: &quot; &amp;avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

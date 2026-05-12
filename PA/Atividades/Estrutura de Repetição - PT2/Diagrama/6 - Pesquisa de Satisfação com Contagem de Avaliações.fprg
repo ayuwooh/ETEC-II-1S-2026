@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-06 08:47:38 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6MzM6NDggIjsxOTQw"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6NDc6MzggIjsxOzIwNTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="review, yesorno" type="Integer" array="False" size=""/>
+            <declare name="ruim, razoavel, satisf, bom, otimo" type="Integer" array="False" size=""/>
+            <declare name="while" type="Boolean" array="False" size=""/>
+            <assign variable="ruim" expression="0"/>
+            <assign variable="razoavel" expression="0"/>
+            <assign variable="satisf" expression="0"/>
+            <assign variable="bom" expression="0"/>
+            <assign variable="otimo" expression="0"/>
+            <assign variable="while" expression="True"/>
+            <while expression="while == True">
+                <output expression="&quot;1-Ruim | 2-Razo&#225;vel | 3-Satisfat&#243;rio | 4-Bom | 5-&#211;timo&quot;" newline="True"/>
+                <input variable="review"/>
+                <if expression="review &lt; 1 or review &gt; 5">
+                    <then>
+                        <output expression="&quot;Avalia&#231;&#227;o inv&#225;lida, tente novamente.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="review == 1">
+                            <then>
+                                <assign variable="ruim" expression="ruim + 1"/>
+                            </then>
+                            <else>
+                                <if expression="review == 2">
+                                    <then>
+                                        <assign variable="razoavel" expression="razoavel + 1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="review == 3">
+                                            <then>
+                                                <assign variable="satisf" expression="satisf + 1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="review == 4">
+                                                    <then>
+                                                        <assign variable="bom" expression="bom + 1"/>
+                                                    </then>
+                                                    <else>
+                                                        <if expression="review == 5">
+                                                            <then>
+                                                                <assign variable="otimo" expression="otimo + 1"/>
+                                                            </then>
+                                                            <else/>
+                                                        </if>
+                                                    </else>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                        <output expression="&quot;Voc&#234; deseja continuar avaliando? Digite 1 para Sim ou 0 para N&#227;o. &quot;" newline="True"/>
+                        <input variable="yesorno"/>
+                        <if expression="yesorno == 1">
+                            <then/>
+                            <else>
+                                <assign variable="while" expression="False"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Grau de satisfa&#231;&#227;o:&quot;" newline="True"/>
+            <output expression="&quot; Ruim: &quot; &amp; ruim &amp; &quot; Razo&#225;vel: &quot; &amp; razoavel &amp; &quot; Satisfat&#243;rio: &quot; &amp; satisf &amp; &quot; Bom: &quot; &amp; bom &amp; &quot; &#211;timo: &quot; &amp; otimo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

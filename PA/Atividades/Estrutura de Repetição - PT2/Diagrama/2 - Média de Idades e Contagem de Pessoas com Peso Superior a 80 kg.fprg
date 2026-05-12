@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-06 08:11:45 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6MDU6MzcgIjsxOTM3"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6MTE6NDUgIjsxOzIwNDE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age, agesum, count, heavy" type="Integer" array="False" size=""/>
+            <declare name="weight, avgage" type="Real" array="False" size=""/>
+            <assign variable="agesum" expression="0"/>
+            <assign variable="heavy" expression="0"/>
+            <assign variable="avgage" expression="0"/>
+            <for variable="count" start="1" end="10" direction="inc" step="1">
+                <input variable="age"/>
+                <input variable="weight"/>
+                <assign variable="agesum" expression="agesum + age"/>
+                <if expression="weight &gt; 80">
+                    <then>
+                        <assign variable="heavy" expression="heavy + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="avgage" expression="agesum / 10"/>
+            <output expression="&quot;O n&#250;mero de pessoas com peso superior a 80 kg &#233;: &quot; &amp;heavy" newline="True"/>
+            <output expression="&quot;A m&#233;dia das idades &#233;: &quot; &amp;avgage" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="9 - Maior, Menor e M&#233;dia de 20 N&#250;meros"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-12 04:04:43 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA1LTEyOzA0OjAxOjQ5IFBNOzI2NTc="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA1LTEyOzA0OjA0OjQzIFBNOzE7Mjc2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count, num, sum, biggest, smallest" type="Integer" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <assign variable="smallest" expression="0"/>
+            <assign variable="biggest" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <for variable="count" start="1" end="20" direction="inc" step="1">
+                <input variable="num"/>
+                <assign variable="sum" expression="sum + num"/>
+                <if expression="smallest == 0 or num &lt; smallest">
+                    <then>
+                        <assign variable="smallest" expression="num"/>
+                    </then>
+                    <else>
+                        <if expression="num &gt; biggest">
+                            <then>
+                                <assign variable="biggest" expression="nu"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <assign variable="avg" expression="sum / 20"/>
+            <output expression="&quot;Maior n&#250;mero: &quot; &amp;biggest" newline="True"/>
+            <output expression="&quot;Menor n&#250;mero: &quot; &amp;smallest" newline="True"/>
+            <output expression="&quot;M&#233;dia dos n&#250;meros: &quot; &amp;avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

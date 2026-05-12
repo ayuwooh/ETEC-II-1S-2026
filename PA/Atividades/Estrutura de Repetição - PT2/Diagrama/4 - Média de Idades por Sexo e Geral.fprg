@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-06 08:24:55 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6MTg6MDIgIjsxOTMz"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6MjQ6NTUgIjsxOzIwNDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count, age, sex, male, fem" type="Integer" array="False" size=""/>
+            <declare name="allavg, maleavg, femavg" type="Real" array="False" size=""/>
+            <assign variable="allavg" expression="0"/>
+            <assign variable="maleavg" expression="0"/>
+            <assign variable="femavg" expression="0"/>
+            <assign variable="male" expression="0"/>
+            <assign variable="fem" expression="0"/>
+            <for variable="count" start="1" end="12" direction="inc" step="1">
+                <input variable="age"/>
+                <input variable="sex"/>
+                <if expression="sex == 1">
+                    <then>
+                        <assign variable="maleavg" expression="maleavg + age"/>
+                        <assign variable="male" expression="male + 1"/>
+                    </then>
+                    <else>
+                        <if expression="sex == 2">
+                            <then>
+                                <assign variable="femavg" expression="femavg + age"/>
+                                <assign variable="fem" expression="fem + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="allavg" expression="allavg + age"/>
+            </for>
+            <assign variable="maleavg" expression="maleavg / male"/>
+            <assign variable="femavg" expression="femavg / fem"/>
+            <assign variable="allavg" expression="allavg / 12"/>
+            <output expression="&quot;A m&#233;dia das idades &#233;: &quot; &amp;allavg" newline="True"/>
+            <output expression="&quot;A m&#233;dia das idades dos homens &#233;: &quot; &amp;maleavg" newline="True"/>
+            <output expression="&quot;A m&#233;dia das idades das mulheres &#233; &quot; &amp;femavg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-06 08:33:40 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6Mjc6MDEgIjsxOTMy"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6MzM6NDAgIjsxOzIwNDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, sum, count" type="Integer" array="False" size=""/>
+            <declare name="avg" type="Real" array="False" size=""/>
+            <declare name="while" type="Boolean" array="False" size=""/>
+            <assign variable="while" expression="True"/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <while expression="while == True">
+                <input variable="num"/>
+                <if expression="num &lt; 0">
+                    <then>
+                        <assign variable="while" expression="False"/>
+                    </then>
+                    <else>
+                        <assign variable="sum" expression="sum + num"/>
+                        <assign variable="count" expression="count + 1"/>
+                    </else>
+                </if>
+            </while>
+            <assign variable="avg" expression="sum / count"/>
+            <output expression="&quot;A m&#233;dia dos n&#250;meros digitados &#233;: &quot; &amp;avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

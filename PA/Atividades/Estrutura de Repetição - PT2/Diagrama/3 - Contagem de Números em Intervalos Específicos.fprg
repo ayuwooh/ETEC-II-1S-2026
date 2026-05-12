@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="26254"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-06 08:17:50 "/>
+        <attribute name="created" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6MTI6NDUgIjsxOTM0"/>
+        <attribute name="edited" value="MjYyNTQ7TEFCNC1NMjA7MjAyNi0wNS0wNjsiMDg6MTc6NTAgIjsxOzIwNDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="count, num, biggerthan10, lessthan5, btwn7n15" type="Integer" array="False" size=""/>
+            <assign variable="biggerthan10" expression="0"/>
+            <assign variable="lessthan5" expression="0"/>
+            <assign variable="btwn7n15" expression="0"/>
+            <for variable="count" start="1" end="10" direction="inc" step="1">
+                <input variable="num"/>
+                <if expression="num &gt; 10">
+                    <then>
+                        <assign variable="biggerthan10" expression="biggerthan10 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="num &lt; 5">
+                    <then>
+                        <assign variable="lessthan5" expression="lessthan5 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="num &gt;= 7 and num &lt;= 15">
+                    <then>
+                        <assign variable="btwn7n15" expression="btwn7n15 + 1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;N&#250;meros maiores que 10: &quot; &amp;biggerthan10" newline="True"/>
+            <output expression="&quot;N&#250;meros menores que 5: &quot; &amp;lessthan5" newline="True"/>
+            <output expression="&quot;N&#250;meros entre 7 e 15: &quot; &amp;btwn7n15" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

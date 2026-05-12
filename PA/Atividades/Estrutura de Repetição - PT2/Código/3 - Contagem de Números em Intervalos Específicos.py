@@ -1,9 +1,8 @@
 count, num, biggerthan10, lessthan5, btwn7n15 = 0, 0, 0, 0, 0
 
-for count in range (1, 10):
+for count in range (1, 11):
     try:
-        num = int(input(f"Digite o {count + 1}º número: "))
-        count += 1
+        num = int(input(f"Digite o {count}º número: "))
         if num > 10:
             biggerthan10 += 1
         if num < 5:
