@@ -1,0 +1,31 @@
+@startuml Sistema de Loja
+
+title Sistema de Loja
+
+' Entidades
+class Cliente {
+    nome
+}
+
+class Produto {
+    nome
+    preco
+    quantidade
+}
+
+class Pedido {
+    quantidade
+}
+
+' Relacionamentos
+Cliente "1" -- "N" Pedido : realiza
+Pedido "N" -- "1" Produto : compra
+
+' Objetivo do sistema
+note top of Cliente
+Objetivo do sistema:
+Gerenciar compras de clientes em uma loja,
+controlando produtos, pedidos e produtos disponíveis.
+end note
+
+@enduml
