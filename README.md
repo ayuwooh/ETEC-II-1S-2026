@@ -9,7 +9,3 @@ Aqui você vai encontrar atividades, materiais e provas de diversas matérias co
 ## 🎯 Objetivo
 
 Organizar e acompanhar minha evolução durante o curso, além de manter um histórico dos projetos desenvolvidos.
-
----
-
-📌 ETEC • 1ºS • Turma II1 • Grupo A
