@@ -6,9 +6,9 @@ for count_one in range(rows):
     row = []
     while count_two < 3:
         try:
-            num = int(input(f"Qual o {count_two+1} valor? "))
+            num = int(input(f"Qual o {count_two + 1} valor? "))
         except ValueError:
-            print("Este não é um valor válido, tente de novo.") 
+            print("Este não é um valor válido, tente de novo.")
             continue
         row.append(num)
         count_two += 1

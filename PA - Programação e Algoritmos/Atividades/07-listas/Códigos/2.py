@@ -4,9 +4,9 @@ num, sum = 0.0, 0.0
 
 while count < 20:
     try:
-        num = int(input(f"Qual o {count+1} valor? "))
+        num = int(input(f"Qual o {count + 1} valor? "))
     except ValueError:
-        print("Este não é um valor válido, tente de novo.") 
+        print("Este não é um valor válido, tente de novo.")
         continue
     nums.append(float(num))
     count += 1
@@ -16,7 +16,7 @@ for num in nums:
         nqty += 1
     elif num > 0:
         sum += num
-        
+
 print("-" * 30)
 print(f"Quantidade de números negativos: {nqty}")
 print(f"Soma de números positivos: {sum}")

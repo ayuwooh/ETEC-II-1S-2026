@@ -1,6 +1,6 @@
-prod=0.0
+prod = 0.0
 
-prod=float(input("Insira o valor do produto: "))
+prod = float(input("Insira o valor do produto: "))
 
 if prod < 20:
     prod = prod + (prod * 0.45)

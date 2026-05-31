@@ -4,9 +4,9 @@ avg = 0.0
 
 while count < 5:
     try:
-        nota = int(input(f"Qual a {count+1} nota do aluno? "))
+        nota = int(input(f"Qual a {count + 1} nota do aluno? "))
     except ValueError:
-        print("Este não é um valor válido, tente de novo.") 
+        print("Este não é um valor válido, tente de novo.")
         continue
     notas.append(int(nota))
     count += 1

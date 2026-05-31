@@ -1,6 +1,6 @@
 count, num, biggerthan10, lessthan5, btwn7n15 = 0, 0, 0, 0, 0
 
-for count in range (1, 11):
+for count in range(1, 11):
     try:
         num = int(input(f"Digite o {count}º número: "))
         if num > 10:
@@ -12,7 +12,7 @@ for count in range (1, 11):
     except ValueError:
         print("Entrada inválida. Por favor, digite um número inteiro.")
 
-print(f"-" * 30)
+print("-" * 30)
 print(f"Números maiores que 10: {biggerthan10}")
 print(f"Números menores que 5: {lessthan5}")
 print(f"Números entre 7 e 15: {btwn7n15}")

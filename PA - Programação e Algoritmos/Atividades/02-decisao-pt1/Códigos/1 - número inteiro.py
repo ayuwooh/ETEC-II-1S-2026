@@ -1,6 +1,6 @@
-vint,vuser=10,0
+vint, vuser = 10, 0
 
-vuser=int(input("Digite um número: "))
+vuser = int(input("Digite um número: "))
 
 if vint == vuser:
     print("Os números são iguais.")

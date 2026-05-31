@@ -1,0 +1,23 @@
+# Office documents (binary, not viewable on GitHub)
+*.docx
+*.pptx
+*.ppsx
+*.xlsx
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Editor
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# yEd graph files
+*.graphml
+
+# brModelo files
+*.brM3

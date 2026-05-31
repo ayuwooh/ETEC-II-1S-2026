@@ -1,7 +1,7 @@
-price,tax,state=0.0,0.0,""
+price, tax, state = 0.0, 0.0, ""
 
-price=float(input("Digite o valor da venda: "))
-state=input("Digite a sigla do estado: ").strip().upper()
+price = float(input("Digite o valor da venda: "))
+state = input("Digite a sigla do estado: ").strip().upper()
 
 if state == "SP":
     tax = price * 0.25

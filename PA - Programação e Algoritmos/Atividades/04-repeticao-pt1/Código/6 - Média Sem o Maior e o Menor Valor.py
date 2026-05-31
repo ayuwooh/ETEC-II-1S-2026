@@ -13,7 +13,7 @@ while count < 5:
         elif num < low:
             low = num
     except ValueError:
-        print(f"Este não é um número 🥹")
+        print("Este não é um número 🥹")
 
 sum = (sum - high) - low
 avg = sum / 3

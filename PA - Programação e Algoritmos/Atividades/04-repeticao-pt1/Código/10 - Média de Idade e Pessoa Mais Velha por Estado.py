@@ -1,4 +1,4 @@
-state, SP, MG, RJ= 0, 1, 2, 3
+state, SP, MG, RJ = 0, 1, 2, 3
 age, agesp, agemg, agerj = 0, 0, 0, 0
 spcount, mgcount, rjcount = 0, 0, 0
 oldestsp, oldestmg, oldestrj = 0, 0, 0
@@ -61,7 +61,7 @@ if spcount > 0:
     print(f"Pessoa mais velha em SP: {oldestsp}")
 
 if mgcount > 0:
-    agemg = agemg / mgcount 
+    agemg = agemg / mgcount
     print(f"Média de idade em MG: {agemg}")
     print(f"Pessoa mais velha em MG: {oldestmg}")
 if rjcount > 0:

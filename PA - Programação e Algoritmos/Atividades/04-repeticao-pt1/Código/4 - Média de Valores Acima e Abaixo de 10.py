@@ -1,4 +1,13 @@
-num, count, counthigh, countlow, sumhigh, sumlow, highavg, lowavg = 0, 0, 0, 0, 0, 0, 0, 0
+num, count, counthigh, countlow, sumhigh, sumlow, highavg, lowavg = (
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+)
 
 while count < 10:
     count += 1
@@ -9,7 +18,7 @@ while count < 10:
     else:
         countlow += 1
         sumlow += num
-        
+
 highavg = sumhigh / counthigh
 lowavg = sumlow / countlow
 

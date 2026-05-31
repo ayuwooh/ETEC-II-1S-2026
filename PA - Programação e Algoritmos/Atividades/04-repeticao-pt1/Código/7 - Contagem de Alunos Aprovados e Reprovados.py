@@ -9,7 +9,7 @@ while student < 10:
             avg += grade
             grades += 1
         except ValueError:
-            print(f"Este não é um número 🥹")
+            print("Este não é um número 🥹")
     print("-" * 20)
     avg = avg / 4
     if avg >= 7:

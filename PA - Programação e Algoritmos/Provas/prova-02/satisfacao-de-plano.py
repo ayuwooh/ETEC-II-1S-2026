@@ -2,11 +2,10 @@ count, satisfaction, age, age_sum = 0, 0, 0, 0
 great, good, bad = 0, 0, 0
 age_avg = 0.0
 
-for count in range(1,21):
-
+for count in range(1, 21):
     print("-" * 30)
-    print(f"Graus de satisfação")
-    print(f"1 - Ótimo | 2 - Bom | 3 - Ruim")
+    print("Graus de satisfação")
+    print("1 - Ótimo | 2 - Bom | 3 - Ruim")
     print("-" * 30)
 
     try:
@@ -15,7 +14,7 @@ for count in range(1,21):
         print("Este não é um valor válido.")
         continue
 
-    if satisfaction not in range(1,4):
+    if satisfaction not in range(1, 4):
         print("Este não é um valor válido.")
         continue
     elif satisfaction == 1:
@@ -30,7 +29,7 @@ for count in range(1,21):
     except ValueError:
         print("Este não é um valor válido.")
         continue
-    
+
     age_sum += age
 
 age_avg = age_sum / 20

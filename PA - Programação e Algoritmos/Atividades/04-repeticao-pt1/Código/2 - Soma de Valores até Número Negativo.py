@@ -1,7 +1,7 @@
 num, sum = 0, 0
 
 while True:
-    num = int(input(f"Digite um valor: "))
+    num = int(input("Digite um valor: "))
     sum += num
     if num < 0:
         break

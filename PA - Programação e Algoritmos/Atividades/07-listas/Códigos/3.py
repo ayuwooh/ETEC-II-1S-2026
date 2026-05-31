@@ -3,9 +3,9 @@ count, num = 0, 0
 
 while count < 10:
     try:
-        num = int(input(f"Qual o {count+1} valor? "))
+        num = int(input(f"Qual o {count + 1} valor? "))
     except ValueError:
-        print("Este não é um valor válido, tente de novo.") 
+        print("Este não é um valor válido, tente de novo.")
         continue
     nums.append(num)
     count += 1

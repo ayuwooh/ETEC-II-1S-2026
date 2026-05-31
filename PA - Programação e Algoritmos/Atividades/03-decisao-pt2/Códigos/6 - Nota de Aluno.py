@@ -1,9 +1,9 @@
-nota1,nota2,media=0.0,0.0,0.0
+nota1, nota2, media = 0.0, 0.0, 0.0
 
-nota1=float(input("Qual a primeira nota? "))
-nota2=float(input("Qual a segunda nota? "))
+nota1 = float(input("Qual a primeira nota? "))
+nota2 = float(input("Qual a segunda nota? "))
 
-media=(nota1+nota2)/2
+media = (nota1 + nota2) / 2
 print("Nota:", media)
 
 if media > 9.0 and media <= 10.0:

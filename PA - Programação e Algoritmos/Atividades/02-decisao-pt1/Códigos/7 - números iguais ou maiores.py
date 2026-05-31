@@ -1,8 +1,8 @@
-int1,int2,int3=0,0,0
+int1, int2, int3 = 0, 0, 0
 
-int1=int(input("Digite o primeiro número: "))
-int2=int(input("Digite o segundo número: "))
-int3=int(input("Digite o terceiro número: "))
+int1 = int(input("Digite o primeiro número: "))
+int2 = int(input("Digite o segundo número: "))
+int3 = int(input("Digite o terceiro número: "))
 
 if int1 == int2 == int3:
     print("Todos os números são iguais.")

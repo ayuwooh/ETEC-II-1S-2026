@@ -1,6 +1,6 @@
-day=0
+day = 0
 
-day=int(input("Digite um número: "))
+day = int(input("Digite um número: "))
 
 if day == 1:
     print("Domingo")

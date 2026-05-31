@@ -1,6 +1,6 @@
-vage=0
+vage = 0
 
-vage=int(input("Qual a idade da pessoa? "))
+vage = int(input("Qual a idade da pessoa? "))
 
 if vage <= 12:
     print("Categoria Infantil")
