@@ -4,11 +4,11 @@ num, sum = 0.0, 0.0
 
 while count < 20:
     try:
-        num = int(input(f"Qual o {count + 1} valor? "))
+        num = float(input(f"Qual o {count + 1} valor? "))
     except ValueError:
         print("Este não é um valor válido, tente de novo.")
         continue
-    nums.append(float(num))
+    nums.append(num)
     count += 1
 
 for num in nums:
