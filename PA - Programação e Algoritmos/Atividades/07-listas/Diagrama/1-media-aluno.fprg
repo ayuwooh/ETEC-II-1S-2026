@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1-media-aluno"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-01 02:39:45 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA2LTAxOzAzOjA0OjIyIFBNOzI2NDk="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA2LTAxOzAyOjM5OjQ1IFBNOzE7Mjc2OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="notas" type="Real" array="True" size="5"/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="avg, nota, sum" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <assign variable="count" expression="0"/>
+            <assign variable="avg" expression="0"/>
+            <while expression="count &lt; 5">
+                <input variable="nota"/>
+                <assign variable="notas[count]" expression="nota"/>
+                <assign variable="count" expression="count + 1"/>
+            </while>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <assign variable="sum" expression="sum + notas[i]"/>
+            </for>
+            <assign variable="avg" expression="sum / count"/>
+            <if expression="avg &gt;= 7">
+                <then>
+                    <output expression="&quot;Aluno aprovado.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="avg &gt;= 5">
+                        <then>
+                            <output expression="&quot;Aluno est&#225; em recupera&#231;&#227;o.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Aluno reprovado.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

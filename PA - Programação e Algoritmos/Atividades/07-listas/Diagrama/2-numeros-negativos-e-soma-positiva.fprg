@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2-numeros-negativos-e-soma-positiva"/>
+        <attribute name="authors" value="ayuwooh"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-01 02:47:27 PM"/>
+        <attribute name="created" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA2LTAxOzAyOjM5OjU3IFBNOzI2NjQ="/>
+        <attribute name="edited" value="YXl1d29vaDtTSUxFTkNFUjsyMDI2LTA2LTAxOzAyOjQ3OjI3IFBNOzE7Mjc2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nums" type="Real" array="True" size="20"/>
+            <declare name="count, nqty" type="Integer" array="False" size=""/>
+            <declare name="num, sum" type="Real" array="False" size=""/>
+            <assign variable="count" expression="0"/>
+            <assign variable="nqty" expression="0"/>
+            <assign variable="sum" expression="0"/>
+            <while expression="count &lt; 20">
+                <input variable="num"/>
+                <assign variable="nums[count]" expression="num"/>
+                <assign variable="count" expression="count + 1"/>
+            </while>
+            <for variable="num" start="0" end="19" direction="inc" step="1">
+                <if expression="nums[num] &lt; 0">
+                    <then>
+                        <assign variable="nqty" expression="nqty + 1"/>
+                    </then>
+                    <else>
+                        <if expression="nums[num] &gt; 0">
+                            <then>
+                                <assign variable="sum" expression="sum + nums[num]"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;Quantidade de n&#250;meros negativos: &quot; &amp;nqty" newline="True"/>
+            <output expression="&quot;Soma de n&#250;meros positivos: &quot; &amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
