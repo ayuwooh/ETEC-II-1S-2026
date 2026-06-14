@@ -7,4 +7,4 @@ select = ["E", "F", "W"]
 ignore = ["E501"]
 
 [tool.ruff.lint.per-file-ignores]
-"PA - Programação e Algoritmos/Aulas/funcoes/exemp-func1.py" = ["F403", "F405", "E712"]
+"pa_programação_e_algoritmos/Aulas/funcoes/exemp_func1.py" = ["F403", "F405", "E712"]
