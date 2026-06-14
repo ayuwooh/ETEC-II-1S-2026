@@ -1,4 +1,4 @@
-from functions import find_max
+from atv_09_funcoes.codigos.functions import find_max
 
 nums = []
 

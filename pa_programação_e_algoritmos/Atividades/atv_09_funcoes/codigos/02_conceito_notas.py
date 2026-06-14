@@ -1,4 +1,4 @@
-from functions import find_concept
+from atv_09_funcoes.codigos.functions import find_concept
 
 grades = []
 ma = 0.0
