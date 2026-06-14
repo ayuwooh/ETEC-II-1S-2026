@@ -11,5 +11,3 @@ Disciplina focada em design digital, identidade visual, e ferramentas de criaç�
   - Paleta de cores web
   - Pôster ETEC
   - Tipos de arte digital, softwares e casos de uso
-- **Aulas:** Materiais de apoio
-- **Provas:** Avaliações aplicadas

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hemerson"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-11 08:16:01 "/>
+        <attribute name="created" value="aGVtZXJzb247TEFCNS1NUFJPRjsyMDI2LTA2LTExOyIwNzo1NjowNyAiOzI3NTY="/>
+        <attribute name="edited" value="aGVtZXJzb247TEFCNS1NUFJPRjsyMDI2LTA2LTExOyIwODoxNjowMSAiOzM7Mjg1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vnum1, vnum2" type="Integer" array="False" size=""/>
+            <input variable="vnum1"/>
+            <input variable="vnum2"/>
+            <output expression="&quot;O valor da soma &#233; :&quot;&amp;somar(vnum1,vnum2)" newline="True"/>
+        </body>
+    </function>
+    <function name="somar" type="Integer" variable="vsoma">
+        <parameters>
+            <parameter name="pn1" type="Integer" array="False"/>
+            <parameter name="pn2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="vsoma" type="Integer" array="False" size=""/>
+            <assign variable="vsoma" expression="pn1+pn2"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -7,6 +7,5 @@ Introdução aos conceitos fundamentais da computação, incluindo hardware, sof
 - **Atividades:**
   - Excel (planilhas)
   - Word (documentos sobre tecnologia na educação, ASCII/binário)
-- **Aulas:** Materiais teóricos
 - **Provas:**
   - Evolução dos computadores (apresentação)

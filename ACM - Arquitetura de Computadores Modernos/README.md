@@ -9,5 +9,3 @@ Estudos sobre arquitetura e organização de computadores modernos, sistemas ope
   - Sistemas operacionais (Linux, Windows, etc.)
   - Estrutura Linux: usuários, senhas, AAA, SSH, PAM
   - Scripts shell (bash)
-- **Aulas:** Materiais teóricos
-- **Provas:** Avaliações aplicadas

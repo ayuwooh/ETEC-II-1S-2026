@@ -6,5 +6,3 @@ Disciplina de inglês voltada para o vocabulário técnico da área de tecnologi
 
 - **Atividades:**
   - WebQuest (pesquisa orientada em inglês técnico)
-- **Aulas:** Materiais de apoio
-- **Provas:** Avaliações aplicadas
