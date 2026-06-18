@@ -65,7 +65,7 @@ SELECT titulo,
     preco,
     CASE
         WHEN preco < 50 THEN 'Barato'
-        WHEN preco >= 50 and < 100 THEN 'Médio'
+        WHEN preco < 100 THEN 'Médio'
         ELSE 'Caro'
     END AS classificacao
 FROM livro;
@@ -85,3 +85,10 @@ SELECT categoria,
     AVG(preco) AS media
 FROM livro
 GROUP BY categoria;
+SELECT categoria,
+    COUNT(*) AS qtd
+FROM livro
+GROUP BY categoria
+HAVING COUNT(*) > 1;
+DROP TABLE livro;
+DROP DATABASE ayuka_silva_20260618;
