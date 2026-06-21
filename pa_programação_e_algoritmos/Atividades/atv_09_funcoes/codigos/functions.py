@@ -53,13 +53,15 @@ def calc_grade(grade1, grade2, grade3, grade_type):
 
 
 def age_category(age):
-    if age >= 5 and age <= 7:
+    if age < 5:
+        return "Inválido"
+    elif age >= 5 and age <= 7:
         return "Infantil A"
-    elif age < 10:
+    elif age <= 10:
         return "Infantil B"
-    elif age < 13:
+    elif age <= 13:
         return "Juvenil A"
-    elif age < 17:
+    elif age <= 17:
         return "Juvenil B"
     else:
         return "Adulto"
