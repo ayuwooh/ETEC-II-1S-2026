@@ -1,8 +1,10 @@
-from atv_09_funcoes.codigos.functions import find_max
+from functions import find_max
 
-nums = []
 
-for i in range(3):
-    nums.append(int(input(f"Digite o {i + 1} número: ")))
+def maior_numero():
+    nums = []
 
-print("O maior número é: ", find_max(nums))
+    for i in range(3):
+        nums.append(int(input(f"Digite o {i + 1} número: ")))
+
+    print("O maior número é: ", find_max(nums))
