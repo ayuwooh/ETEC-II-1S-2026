@@ -1,0 +1,17 @@
+[tool.ruff]
+line-length = 100
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]
+ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+"pa_programação_e_algoritmos/Aulas/funcoes/exemp_func1.py" = ["F403", "F405", "E712"]
+
+[tool.pyright]
+extraPaths = [
+    "pa_programação_e_algoritmos/Atividades",
+    "pa_programação_e_algoritmos/Aulas",
+    "pa_programação_e_algoritmos/Provas"
+]
