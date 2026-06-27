@@ -8,14 +8,14 @@ Organizar e acompanhar minha evolução durante o curso, além de manter um hist
 
 ## 📚 Matérias
 
-| Código | Disciplina |
+| Codigo | Disciplina |
 |--------|------------|
-| [ACM](/ACM%20-%20Arquitetura%20de%20Computadores%20Modernos) | Arquitetura de Computadores Modernos |
-| [AD](/AD%20-%20Artes%20Digitais) | Artes Digitais |
-| [APW](/APW%20-%20An%C3%A1lise%20e%20Projeto%20de%20Sistemas) | Análise e Projeto de Sistemas |
-| [BD](/BD%20-%20Banco%20de%20Dados) | Banco de Dados |
-| [FIA](/FIA%20-%20Fundamentos%20de%20Inform%C3%A1tica) | Fundamentos de Informática |
-| [IT](/IT%20-%20Ingl%C3%AAs%20T%C3%A9cnico) | Inglês Técnico |
-| [IW](/IW%20-%20Internet%20e%20Web) | Internet e Web |
-| [PA](/PA%20-%20Programa%C3%A7%C3%A3o%20e%20Algoritmos) | Programação e Algoritmos |
-| [RC](/RC%20-%20Redes%20de%20Computadores) | Redes de Computadores |
+| [ACM](acm-arquitetura-de-computadores-modernos) | Arquitetura de Computadores Modernos |
+| [AD](ad-artes-digitais) | Artes Digitais |
+| [APW](apw-analise-e-projeto-de-sistemas) | Analise e Projeto de Sistemas |
+| [BD](bd-banco-de-dados) | Banco de Dados |
+| [FIA](fia-fundamentos-de-informatica) | Fundamentos de Informatica |
+| [IT](it-ingles-tecnico) | Ingles Tecnico |
+| [IW](iw-internet-e-web) | Internet e Web |
+| [PA](pa-programacao-e-algoritmos) | Programacao e Algoritmos |
+| [RC](rc-redes-de-computadores) | Redes de Computadores |
