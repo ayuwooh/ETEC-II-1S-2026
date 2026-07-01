@@ -1,0 +1,27 @@
+@startuml
+start
+:Usuario acessa o sistema;
+:Usuario pesquisa o livro no acervo;
+if (Livro disponivel?) then (sim)
+  :Usuario solicita emprestimo;
+  :Bibliotecario confirma dados do usuario;
+  :Bibliotecario registra retirada;
+  :Sistema atualiza status para "emprestado";
+  :Sistema gera comprovante;
+  :Usuario retira livro fisico;
+  note right: Prazo de devolucao: 14 dias
+  :Usuario devolve livro na data prevista;
+  :Bibliotecario registra devolucao;
+  :Sistema atualiza status para "disponivel";
+  stop
+else (nao)
+  :Sistema sugere agendamento\nou reserva;
+  if (Usuario quer reservar?) then (sim)
+    :Usuario faz reserva;
+    :Sistema notifica quando\ndisponivel;
+    stop
+  else (nao)
+    stop
+  endif
+endif
+@enduml

@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "pa-programacao-e-algoritmos/atividades",
+        "pa-programacao-e-algoritmos/aulas",
+        "pa-programacao-e-algoritmos/provas"
+    ]
+}

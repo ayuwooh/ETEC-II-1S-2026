@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+
+actor "Usuario" as user
+actor "Bibliotecario" as biblio
+
+rectangle "Biblioteca Online" {
+  usecase "Consultar Acervo" as UC1
+  usecase "Realizar Emprestimo" as UC2
+  usecase "Reservar Livro" as UC3
+  usecase "Renovar Emprestimo" as UC4
+  usecase "Cadastrar Livro" as UC5
+  usecase "Registrar Devolucao" as UC6
+  usecase "Gerar Relatorios" as UC7
+}
+
+user --> UC1
+user --> UC2
+user --> UC3
+user --> UC4
+
+biblio --> UC5
+biblio --> UC6
+biblio --> UC7
+biblio --> UC2
+biblio --> UC4
+
+@enduml

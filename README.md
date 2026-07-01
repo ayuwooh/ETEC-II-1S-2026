@@ -1,21 +1,29 @@
-# ETEC - 1º Semestre 2026 💻
+# ETEC Hortolândia — Informática para Internet (Módulo I)
 
-Este repositório reúne todos os trabalhos desenvolvidos durante o primeiro semestre de 2026 no curso de **Informática para Internet** da ETEC.
+[![Lint Python](https://github.com/ayuwooh/ETEC-II-1S-2026/actions/workflows/lint.yml/badge.svg)](https://github.com/ayuwooh/ETEC-II-1S-2026/actions/workflows/lint.yml)
 
-## 🎯 Objetivo
+Trabalhos e atividades do **Módulo I** do curso Técnico em Informática para Internet — ETEC de Hortolândia (1º semestre de 2026).
 
-Organizar e acompanhar minha evolução durante o curso, além de manter um histórico dos projetos desenvolvidos.
+## Matérias
 
-## 📚 Matérias
+| Código | Disciplina | Progresso |
+|--------|-----------|-----------|
+| [ACM](acm-arquitetura-de-computadores-modernos) | Arquitetura de Computadores Modernos | ✅ |
+| [AD](ad-artes-digitais) | Artes Digitais | ✅ |
+| [APW](apw-analise-e-projeto-de-sistemas) | Análise e Projeto de Sistemas | ✅ |
+| [BD](bd-banco-de-dados) | Banco de Dados | ✅ |
+| [FIA](fia-fundamentos-de-informatica) | Fundamentos de Informática | ✅ |
+| [IT](it-ingles-tecnico) | Inglês Técnico | ✅ |
+| [IW](iw-internet-e-web) | Internet e Web | ✅ |
+| [PA](pa-programacao-e-algoritmos) | Programação e Algoritmos | ✅ |
+| [RC](rc-redes-de-computadores) | Redes de Computadores | ✅ |
 
-| Codigo | Disciplina |
-|--------|------------|
-| [ACM](acm-arquitetura-de-computadores-modernos) | Arquitetura de Computadores Modernos |
-| [AD](ad-artes-digitais) | Artes Digitais |
-| [APW](apw-analise-e-projeto-de-sistemas) | Analise e Projeto de Sistemas |
-| [BD](bd-banco-de-dados) | Banco de Dados |
-| [FIA](fia-fundamentos-de-informatica) | Fundamentos de Informatica |
-| [IT](it-ingles-tecnico) | Ingles Tecnico |
-| [IW](iw-internet-e-web) | Internet e Web |
-| [PA](pa-programacao-e-algoritmos) | Programacao e Algoritmos |
-| [RC](rc-redes-de-computadores) | Redes de Computadores |
+## Certificação
+
+Após conclusão do **Módulo I**: **Auxiliar Técnico de Informática para Internet**
+
+## Ferramentas
+
+- Python 3.14 · Ruff · Pyright
+- VS Codium · OnlyOffice
+- Arch Linux

@@ -1,0 +1,11 @@
+1. Explique o conceito e a função principal de um Sistema Operacional.
+R: O sistema operacional é o intermediário entre o hardware e o software, gerênciando e distribuindo os recursos da máquina, fornecendo uma interface para que o software execute apropriadamente.
+
+2. O que caracteriza um ambiente ou servidor Bare-metal?
+R: É quando se executa um sistema operacional e/ou softwares diretamente no hardware físico, sem camadas de virtualização (VM).
+
+3. Defina o que é uma Máquina Virtual (VM).
+R: É um computador virtualizado dentro de um servidor físico, rodando seu próprio sistema operacional de forma isolada.
+
+4. Explique o conceito de Container no contexto de infraestrutura de software.
+R: É uma tecnologia que empacota softwares em ambientes isolados, mas compartilhando o kernel do host.

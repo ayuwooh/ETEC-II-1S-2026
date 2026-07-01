@@ -1,0 +1,30 @@
+@startuml
+!define RECTANGLE class
+
+skinparam rectangle {
+    BorderColor #1F3A5F
+    BackgroundColor #E8EDF5
+}
+
+skinparam arrow {
+    Color #1F3A5F
+    FontSize 11
+}
+
+rectangle "Sistema\nBiblioteca Online" as sistema #4A7FB5 {
+}
+
+rectangle Usuario as usu #D4E6F1
+rectangle Bibliotecario as bib #D4E6F1
+rectangle Administrador as adm #D4E6F1
+
+usu -right-> sistema : "consulta acervo, reserva livros,\nacompanha emprestimos"
+sistema -right-> usu : "exibe disponibilidade, notifica prazos"
+
+bib -left-> sistema : "cadastra livros, gerencia\nemprestimos e devolucoes"
+sistema -left-> bib : "confirma registros, alerta atrasos"
+
+adm -down-> sistema : "gerencia usuarios, relatorios,\nconfiguracoes do sistema"
+sistema -down-> adm : "exporta dados, relatorios gerenciais"
+
+@enduml

@@ -1,0 +1,34 @@
+name: Lint
+
+on:
+  push:
+    paths:
+      - "**.py"
+      - "**.md"
+      - "**.html"
+  pull_request:
+    paths:
+      - "**.py"
+      - "**.md"
+      - "**.html"
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/ruff-action@v3
+        with:
+          args: check
+
+  markdown:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npx markdownlint-cli@latest '**/*.md' --ignore node_modules --config .markdownlint.json
+
+  html:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: npx htmlhint@latest '**/*.html'

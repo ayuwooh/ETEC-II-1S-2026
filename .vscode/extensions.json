@@ -1,0 +1,12 @@
+{
+    "recommendations": [
+        "charliermarsh.ruff",
+        "ms-python.python",
+        "davidanson.vscode-markdownlint",
+        "yzhang.markdown-all-in-one",
+        "jebbs.plantuml",
+        "hediet.vscode-drawio",
+        "redhat.vscode-yaml",
+        "eamodio.gitlens"
+    ]
+}
